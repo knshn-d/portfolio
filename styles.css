@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080808;
+    overflow: hidden;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background {
+    z-index: 1;
+}
+
+.foreground {
+    z-index: 2;
+}
+
+.content {
+    position: relative;
+    z-index: 3;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
