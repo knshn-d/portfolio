@@ -2,7 +2,6 @@
 TODO
 - Add project images
 - Add project github link
-- Make responsive
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -18,12 +17,14 @@ TODO
     <div class="parallax-layer background"></div>
     <div class="parallax-layer foreground">
         <div class="container">
-            <div class="column">
-                <h1>Hello!</h1> My name is <b>Kenshin</b>.
-                <h1>WELCOME to my portfolio!</h1>
+            <div class="column" id="profile-column">
+                <h1 class="black-bar">WELCOME!</h1>
+                <p id="intern-name"><b>Ram Kenshin Ayan</b></p>
+                <p id="intern-title">IT Intern.</p>
+                
 
                 <section class="experience">
-                    <p><b>EXPERIENCE </b>(4 years)</p>
+                    <p class="black-bar"><b>EXPERIENCE </b>(4 years)</p>
                     <div class="image-container">
                         <img src="assets\images\programming languages\java.svg" alt="java.svg">
                         <img src="assets\images\programming languages\javascript.svg" alt="javascript.svg">
@@ -50,7 +51,7 @@ TODO
                 </section>
 
                 <section class="operating-systems">
-                    <p><b>OPERATING SYSTEMS</b></p>
+                    <p class="black-bar"><b>OPERATING SYSTEMS</b></p>
                     <div class="image-container">
                         <img src="assets\images\os\windows.svg" alt="windows.svg">
                         <p><b>Experience:</b> 15 years</p>
@@ -63,10 +64,10 @@ TODO
                 </section>
             </div>
 
-            <div class="column">
+            <div class="column" id="project-column">
                 <h2>PROJECTS</h2>
-                <p>These are projects I worked on at Saint Louis University Baguio.
-                <p style="font-size:12px"><i>Hover over project title to show details.</i></p>
+                <p style="margin: 0;">These are projects I worked on at Saint Louis University Baguio.
+                <p style="font-size: 14px; margin: 0;"><i>Hover on the project title to show details.</i></p>
                 </p>
 
                 <div class="project">
@@ -77,10 +78,10 @@ TODO
                         <p><b>Course: </b>Integrative Technologies</p>
                         <p><b>Role: </b>Project Lead/Back-end Developer of 6 members</p>
                         <p><b>Programming Language/s: </b>
-                            <div class="image-container">
-                                <img src="assets\images\programming languages\java.svg" alt="java.svg">
-                                <img src="assets\images\programming languages\python.svg" alt="python.svg">
-                            </div>
+                        <div class="image-container">
+                            <img src="assets\images\programming languages\java.svg" alt="java.svg">
+                            <img src="assets\images\programming languages\python.svg" alt="python.svg">
+                        </div>
                         </p>
                     </div>
                 </div>
@@ -95,12 +96,12 @@ TODO
                         <p><b>Course: </b> Web Technologies</p>
                         <p><b>Role: </b> Project Lead/Back-end Developer of 6 members</p>
                         <p><b>Programming Language/s: </b>
-                            <div class="image-container">
-                                <img src="assets\images\others\html.svg" alt="html.svg">
-                                <img src="assets\images\programming languages\php.png" alt="php.png">
-                                <img src="assets\images\others\css.svg" alt="css.svg">
-                                <img src="assets\images\programming languages\javascript.svg" alt="javascript.svg">
-                            </div>
+                        <div class="image-container">
+                            <img src="assets\images\others\html.svg" alt="html.svg">
+                            <img src="assets\images\programming languages\php.png" alt="php.png">
+                            <img src="assets\images\others\css.svg" alt="css.svg">
+                            <img src="assets\images\programming languages\javascript.svg" alt="javascript.svg">
+                        </div>
                         </p>
                     </div>
                 </div>
@@ -116,12 +117,12 @@ TODO
                         <p><b>Course: </b> Web Technologies</p>
                         <p><b>Role: </b> Project Lead/Back-end Developer of 6 members</p>
                         <p><b>Programming Language/s: </b>
-                            <div class="image-container">
-                                <img src="assets\images\others\html.svg" alt="html.svg">
-                                <img src="assets\images\programming languages\php.png" alt="php.png">
-                                <img src="assets\images\others\css.svg" alt="css.svg">
-                                <img src="assets\images\programming languages\javascript.svg" alt="javascript.svg">
-                            </div>
+                        <div class="image-container">
+                            <img src="assets\images\others\html.svg" alt="html.svg">
+                            <img src="assets\images\programming languages\php.png" alt="php.png">
+                            <img src="assets\images\others\css.svg" alt="css.svg">
+                            <img src="assets\images\programming languages\javascript.svg" alt="javascript.svg">
+                        </div>
                         </p>
                     </div>
                 </div>
@@ -133,11 +134,11 @@ TODO
                         <p><b>Course: </b> Current Trends</p>
                         <p><b>Role: </b> Back-end Developer of 5 members</p>
                         <p><b>Programming Language/s: </b>
-                            <div class="image-container">
-                                <img src="assets\images\others\html.svg" alt="html.svg">
-                                <img src="assets\images\programming languages\php.png" alt="php.png">
-                                <img src="assets\images\others\wordpress.svg" alt="wordpress.svg">
-                            </div>
+                        <div class="image-container">
+                            <img src="assets\images\others\html.svg" alt="html.svg">
+                            <img src="assets\images\programming languages\php.png" alt="php.png">
+                            <img src="assets\images\others\wordpress.svg" alt="wordpress.svg">
+                        </div>
                         </p>
                     </div>
                 </div>
@@ -150,13 +151,13 @@ TODO
                         <p><b>Course: </b>Capstone</p>
                         <p><b>Role: </b> Back-end Developer of 8 members</p>
                         <p><b>Programming Language/s: </b>
-                            <div class="image-container">
-                                <img src="assets\images\others\html.svg" alt="html.svg">
-                                <img src="assets\images\programming languages\php.png" alt="php.png">
-                                <img src="assets\images\others\css.svg" alt="css.svg">
-                                <img src="assets\images\programming languages\javascript.svg" alt="javascript.svg">
-                                <img src="assets\images\databases\mysql.svg" alt="mysql.svg">
-                            </div>
+                        <div class="image-container">
+                            <img src="assets\images\others\html.svg" alt="html.svg">
+                            <img src="assets\images\programming languages\php.png" alt="php.png">
+                            <img src="assets\images\others\css.svg" alt="css.svg">
+                            <img src="assets\images\programming languages\javascript.svg" alt="javascript.svg">
+                            <img src="assets\images\databases\mysql.svg" alt="mysql.svg">
+                        </div>
                         </p>
                     </div>
 

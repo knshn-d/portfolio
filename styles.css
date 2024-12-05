@@ -1,7 +1,68 @@
+/* Font */
+@font-face {
+    font-family: "Manrope";
+    font-weight: 200;
+    src: url("/assets/font/Manrope-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope";
+    font-weight: 500;
+    src: url("/assets/font/Manrope-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope";
+    font-weight: 600;
+    src: url("/assets/font/Manrope-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope";
+    font-weight: 500;
+    src: url("/assets/font/Manrope-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope";
+    font-weight: 600;
+    src: url("/assets/font/Manrope-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope";
+    font-weight: 700;
+    src: url("/assets/font/Manrope-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope";
+    font-weight: 800;
+    src: url("/assets/font/Manrope-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope Mono";
+    font-weight: 400;
+    src: url("/assets/font/ManropeMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope Mono";
+    font-weight: 600;
+    src: url("/assets/font/ManropeMono-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope Mono";
+    font-weight: 700;
+    src: url("/assets/font/ManropeMono-Bold.ttf") format("truetype");
+}
+
 /* Global Styles */
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Manrope";
 }
 
 body {
@@ -41,20 +102,52 @@ body {
     z-index: 2;
 }
 
-/* Project Details */
-.details {
-    display: none;
-    position: absolute;
-    border: 3px solid #080808;
-    border-color: #080808;
-    border-radius: 5px;
-    padding: 25px;
-    background-color: #fff;
-    color: #080808;
+/* Profile Column */
+.black-bar {
+    color: #fff;
+    background-color: #080808;
+    padding-left: 5px;
+}
+
+#intern-name {
+    font-size: x-large;
+    margin: 0;
+}
+
+#intern-title {
+    font-size: large;
+    margin: 0;
+}
+
+
+/* Project Column */
+#project-column {
+    text-align: right;
+}
+
+#project-column .details {
+    text-align: left;
 }
 
 .project:hover .details {
     display: block;
+}
+
+.project:hover h3 {
+    transition: color 0.3s ease, background-color 0.3s ease;
+    color: #fff;
+    background-color: #080808;
+}
+
+.details {
+    display: none;
+    position: absolute;
+    border: 1px solid #080808;
+    border-color: #080808;
+    border-radius: 3px;
+    padding: 20px;
+    background-color: #fff;
+    color: #080808;
 }
 
 /* Image Container */
@@ -65,7 +158,7 @@ body {
 }
 
 .image-container img {
-    width: 10%;
+    width: 8%;
     height: auto;
 }
 
@@ -94,7 +187,9 @@ body {
         margin: 20px;
     }
 
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
         font-size: 20px;
     }
 
@@ -129,7 +224,9 @@ body {
         padding: 5px;
     }
 
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
         font-size: 18px;
     }
 
