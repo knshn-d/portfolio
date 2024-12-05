@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     box-sizing: border-box;
     font-family: sans-serif;
@@ -8,12 +9,24 @@ body {
     overflow: hidden;
 }
 
+/* Container Layout */
+.container {
+    position: relative;
+    z-index: 3;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+/* Column Layout */
 .column {
     float: left;
     width: 50%;
     padding: 20px;
 }
 
+/* Parallax Layer */
 .parallax-layer {
     background-position: center;
     background-repeat: no-repeat;
@@ -28,15 +41,7 @@ body {
     z-index: 2;
 }
 
-.container {
-    position: relative;
-    z-index: 3;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    margin-right: 100px;
-    margin-left: 100px;
-}
-
+/* Project Details */
 .details {
     display: none;
     position: absolute;
@@ -49,6 +54,7 @@ body {
     display: block;
 }
 
+/* Image Container */
 .image-container {
     display: flex;
     flex-wrap: wrap;
@@ -63,4 +69,81 @@ body {
 .details .image-container img {
     width: 10%;
     height: auto;
+}
+
+/* Mobile  */
+@media (max-width: 768px) {
+    .parallax-layer {
+        transform: translateY(10%);
+        transition: transform 0.3s ease;
+    }
+
+    body {
+        overflow: visible;
+    }
+
+    .column {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container {
+        margin: 20px;
+    }
+
+    h1, h2, h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .image-container img {
+        width: 20%;
+        max-width: 60px;
+    }
+
+    .details {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+/* For small devices */
+@media (max-width: 480px) {
+    .parallax-layer {
+        transform: translateY(10%);
+        transition: transform 0.3s ease;
+    }
+
+    body {
+        overflow: visible;
+    }
+
+    .column {
+        width: 100%;
+        padding: 5px;
+    }
+
+    h1, h2, h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .image-container img {
+        width: 30%;
+        max-width: 50px;
+    }
+
+    .details {
+        padding: 15px;
+    }
+
+    .details p {
+        font-size: 12px;
+    }
 }
