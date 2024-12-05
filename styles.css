@@ -1,21 +1,20 @@
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
-    background-color: #080808;
+    background-color: #FDFCFA;
     overflow: hidden;
 }
 
 .column {
     float: left;
     width: 50%;
+    padding: 20px;
 }
 
 .parallax-layer {
-    position: absolute;
-    top: 0;
-    left: 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,12 +28,39 @@ body {
     z-index: 2;
 }
 
-.content {
+.container {
     position: relative;
     z-index: 3;
-    color: white;
-    margin-top: 40px;
+    margin-top: 100px;
     margin-bottom: 40px;
     margin-right: 100px;
     margin-left: 100px;
+}
+
+.details {
+    display: none;
+    position: absolute;
+    padding: 30px;
+    background-color: #080808;
+    color: #fff;
+}
+
+.project:hover .details {
+    display: block;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-container img {
+    width: 10%;
+    height: auto;
+}
+
+.details .image-container img {
+    width: 10%;
+    height: auto;
 }
