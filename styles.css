@@ -81,7 +81,6 @@ body {
     margin: 0;
 }
 
-
 /* Project Column */
 #project-column {
     text-align: right;
@@ -96,7 +95,13 @@ body {
 }
 
 .project h3 {
+    font-size: x-large;
     padding-right: 5px;
+}
+
+.project a {
+    text-decoration: none;
+    color: initial; 
 }
 
 .project:hover h3 {
@@ -124,7 +129,7 @@ body {
 }
 
 .image-container img {
-    width: 8%;
+    width: 10%;
     height: auto;
 }
 
