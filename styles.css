@@ -168,6 +168,10 @@ body {
         font-size: 14px;
     }
 
+    .project a {
+        pointer-events: none;
+    }
+
     .image-container img {
         width: 20%;
         max-width: 60px;
@@ -203,6 +207,10 @@ body {
 
     p {
         font-size: 12px;
+    }
+
+    .project a {
+        pointer-events: none;
     }
 
     .image-container img {
