@@ -1,6 +1,8 @@
 <!-- TODO
 - Add project images
 - Add project github link
+- Dark Mode
+= Blog(?)
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -21,9 +23,11 @@
         <div class="container">
             <div class="column" id="profile-column">
                 <h1 class="black-bar">WELCOME!</h1>
-                <p id="intern-name"><b>Ram Kenshin Ayan</b></p>
-                <p id="intern-title">IT Intern - Aspiring Web Developer</p>
-
+                <p id="name"><b>Ram Kenshin Ayan</b></p>
+                <div id="title">
+                    <p>BSIT Graduate - Saint Louis University Baguio - July 2025</p>
+                    <p>Aspiring Web Developer</p>
+                </div>
 
                 <section class="experience">
                     <p class="black-bar"><b>EXPERIENCE </b>(4 years)</p>
@@ -38,6 +42,7 @@
                         <img src="assets\images\databases\mysql.svg" alt="mysql.svg">
                         <img src="assets\images\frameworks\bootstrap.svg" alt="bootstrap.svg">
                         <img src="assets\images\frameworks\jquery.svg" alt="jquery.svg">
+                        <img src="assets\images\frameworks\react.svg" alt="react.svg">
                         <img src="assets\images\frameworks\nodejs.svg" alt="nodejs.svg">
                         <img src="assets\images\others\css.svg" alt="css.svg">
                         <img src="assets\images\others\html.svg" alt="html.svg">
@@ -58,13 +63,17 @@
                         <img src="assets\images\os\ubuntu.svg" alt="ubuntu.svg">
                         <p><b>Experience:</b> 1 Semester</p>
                     </div>
+                    <div class="image-container">
+                        <img src="assets\images\os\ubuntu.svg" alt="ubuntu.svg">
+                        <p><b>Experience:</b> 1 Semester</p>
+                    </div>
                 </section>
             </div>
 
             <div class="column" id="project-column">
                 <h2>PROJECTS</h2>
-                <p style="margin: 0;">These are projects I worked on at Saint Louis University Baguio.
-                <p style="font-size: 14px; margin: 0;"><i>Hover on the project title to show details.</i></p>
+                <p style="margin: 0;">These are projects I had at Saint Louis University Baguio.
+                <p style="font-size: 14px; margin: 0;"><i>Hover over the project title to show details.</i></p>
                 </p>
 
                 <div class="project">
@@ -75,7 +84,7 @@
                         <p>The objective of this multiplayer game is to quickly form the most words possible from a
                             random set of letters.</p>
                         <p><b>Course: </b>Integrative Technologies</p>
-                        <p><b>Role: </b>Project Lead/Back-end Developer of 6 members</p>
+                        <p><b>Role: </b>Project Lead & Back-end Developer</p>
                         <p><b>Technologies: </b>
                         <div class="image-container">
                             <img src="assets\images\programming languages\java.svg" alt="java.svg">
@@ -88,11 +97,11 @@
                 <div class="project">
                     <h3>TRANSERV</h3>
                     <div class="details">
-                        <p>A simple web application that visualizes trends based on user reservations and visits,
+                        <p>A simple web application that visualizes trends based on user reservations and visits
                             categorized
-                            by lodge tags. The app also allows users to book transient lodging in Baguio City.</p>
-                        <p><b>Course: </b> Web Technologies</p>
-                        <p><b>Role: </b> Project Lead/Back-end Developer of 6 members</p>
+                            by tags. The app also allows users to book transient lodging in Baguio City.</p>
+                        <p><b>Course: </b>Web Technologies</p>
+                        <p><b>Role: </b>Project Lead & Back-end Developer</p>
                         <p><b>Technologies: </b>
                         <div class="image-container">
                             <img src="assets\images\others\html.svg" alt="html.svg">
@@ -108,12 +117,11 @@
                     <h3>WEB DOCUMENT REVIEWER</h3>
                     <div class="details">
                         <p>A web application that enables requesters to upload their documents for review. Reviewers can
-                            comment
-                            on, annotate, pass the document to the next reviewer, reject it, or return it to the
+                            comment, annotate, pass the document to the next reviewer, reject, or return to the
                             requester for
                             revisions.</p>
-                        <p><b>Course: </b> Web Technologies</p>
-                        <p><b>Role: </b> Project Lead/Back-end Developer of 6 members</p>
+                        <p><b>Course: </b>Web Technologies</p>
+                        <p><b>Role: </b>Project Lead & Back-end Developer</p>
                         <p><b>Technologies: </b>
                         <div class="image-container">
                             <img src="assets\images\others\html.svg" alt="html.svg">
@@ -130,8 +138,8 @@
                     <h3>KULTOURA</h3>
                     <div class="details">
                         <p>A website showcasing the Saint Louis University Baguio Museum.</p>
-                        <p><b>Course: </b> Current Trends</p>
-                        <p><b>Role: </b> Back-end Developer of 5 members</p>
+                        <p><b>Course: </b>Current Trends</p>
+                        <p><b>Role: </b>Back-end Developer</p>
                         <p><b>Technologies: </b>
                         <div class="image-container">
                             <img src="assets\images\others\html.svg" alt="html.svg">
@@ -143,12 +151,12 @@
                 </div>
 
                 <div class="project">
-                    <h3>AR PROGRESSIVE WEB APP FOR SAINT LOUIS UNIVERSITY BAGUIO MUSEUM</h3>
+                    <h3>SLU AUGMENTED REALITY MUSEUM APP</h3>
                     <div class="details">
                         <p>A progressive web application designed to replace traditional record-keeping methods in
                             the museum, while offering an augmented reality (AR) technology-driven tour experience.</p>
                         <p><b>Course: </b>Capstone</p>
-                        <p><b>Role: </b> Back-end Developer of 8 members</p>
+                        <p><b>Role: </b>Back-end Developer</p>
                         <p><b>Technologies: </b>
                         <div class="image-container">
                             <img src="assets\images\others\html.svg" alt="html.svg">
@@ -159,7 +167,30 @@
                         </div>
                         </p>
                     </div>
+                </div>
 
+                <div class="project">
+                    <h3>KAISIPAN, INC. WEBINAR PLATFORM</h3>
+                    <div class="details">
+                        <p>A web application designed for Kaisipan, Inc. to streamline webinar management and
+                            participation. Features of this platform include: account creation with
+                            profile management, webinar calendar,
+                            Zoom integration for efficient hosting/participation, intuitive certificate editor, and
+                            automated email delivery.
+                        <p>
+                        <p><b>Course: </b>Practicum</p>
+                        <p><b>Role: </b>Full-stack Developer</p>
+                        <p><b>Technologies: </b>
+                        <div class="image-container">
+                            <img src="assets\images\frameworks\react.svg" alt="react.svg">
+                            <img src="assets\images\others\html.svg" alt="html.svg">
+                            <img src="assets\images\programming languages\php.png" alt="php.png">
+                            <img src="assets\images\others\css.svg" alt="css.svg">
+                            <img src="assets\images\programming languages\javascript.svg" alt="javascript.svg">
+                            <img src="assets\images\databases\mysql.svg" alt="mysql.svg">
+                        </div>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
